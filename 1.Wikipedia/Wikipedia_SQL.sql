@@ -1,4 +1,12 @@
 -- Databricks notebook source
+-- MAGIC %md
+-- MAGIC # Delta Live Tables 예제 #1
+-- MAGIC ## Wikipedia 클릭스트림 파이프라인 만들기
+-- MAGIC 
+-- MAGIC <img src="https://github.com/seungdon-db/kr-dlt-workshop/blob/main/images/wikipedia-00-pipeline.png?raw=true"></img>
+
+-- COMMAND ----------
+
 --- An example Delta Live Tables pipeline that ingests wikipedia click stream data and builds some simple summary tables.
 
 CREATE LIVE TABLE clickstream_raw
