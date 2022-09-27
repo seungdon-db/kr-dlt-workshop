@@ -1,4 +1,9 @@
 # Databricks notebook source
+# MAGIC %md
+# MAGIC ## CDC 로그 생성
+
+# COMMAND ----------
+
 # MAGIC %pip install Faker
 
 # COMMAND ----------
