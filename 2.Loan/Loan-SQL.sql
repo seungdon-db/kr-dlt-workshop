@@ -4,7 +4,7 @@
 -- MAGIC 
 -- MAGIC DLT를 써서 모든 사람이 데이터 엔지니어링 작업을 해봅시다! SQL이나 Python으로 데이터의 변경작업을 선언하기만 하면 DLT가  데이터 엔지니어링하는데 필요한 복잡한 작업들을 대신 해줄 거에요. 
 -- MAGIC 
--- MAGIC <img style="float:right" src="https://raw.githubusercontent.com/morganmazouchi/Tech-Summit-2022/main/InputData%20%26%20ML%20model/Techsummit%20DLT%202022-loanpipeline.png" width="700"/>
+-- MAGIC <img style="float:right" src="https://github.com/QuentinAmbard/databricks-demo/raw/main/product_demos/dlt-golden-demo-1.png" width="700"/>
 -- MAGIC 
 -- MAGIC **ETL 개발 가속화** <br/>
 -- MAGIC 분석가나 데이터엔지니어가 간단하게 파이프라인을 만들고 운영하게 도와줍니다. 
@@ -28,7 +28,7 @@
 -- MAGIC 
 -- MAGIC ## Bronze layer: incrementally ingest data leveraging Databricks Autoloader
 -- MAGIC 
--- MAGIC <img style="float: right; padding-left: 10px" src="https://raw.githubusercontent.com/morganmazouchi/Tech-Summit-2022/main/InputData%20%26%20ML%20model/Techsummit%20DLT%202022%20-%20autoloader.png" width="800"/>
+-- MAGIC <img style="float: right; padding-left: 10px" src="https://github.com/QuentinAmbard/databricks-demo/raw/main/product_demos/dlt-golden-demo-2.png" width="500"/>
 -- MAGIC 
 -- MAGIC Raw Data가 Cloud Storage에 적재되면,
 -- MAGIC 
@@ -104,7 +104,7 @@ AS SELECT * FROM delta.`${input_data}/ref_accounting_treatment/` ;
 -- MAGIC %md
 -- MAGIC 
 -- MAGIC ## Silver layer: joining tables while ensuring data quality
--- MAGIC <img style="float:right"  src="https://raw.githubusercontent.com/morganmazouchi/Tech-Summit-2022/main/InputData%20%26%20ML%20model/Techsummit%20DLT%202022%20-%20Silver%20Layer.png" width="500"/>
+-- MAGIC <img style="float: right; padding-left: 10px" src="https://github.com/QuentinAmbard/databricks-demo/raw/main/product_demos/dlt-golden-demo-3.png" width="500"/>
 -- MAGIC 
 -- MAGIC 
 -- MAGIC 브론즈 레이어가 정의되었으니 이를 조인해서 실버 레이어를 만들도록 하겠습니다. 브론즈 테이블들에 대해서 참조할때 `LIVE` spacename을 사용하는 것을 주목해 주세요. 
@@ -178,7 +178,7 @@ INNER JOIN LIVE.ref_accounting_treatment b USING (id);
 -- MAGIC 
 -- MAGIC SQL Warehouse를 사용해서 여러 사용자들이 조회할 테이블이니 테이블레벨에서 `pipelines.autoOptimize.zOrderCols` 를 사용해서 빠른 쿼리 성능을 보장하도록 합니다.
 -- MAGIC 
--- MAGIC <img style="float: center; padding-left: 50px" src="https://raw.githubusercontent.com/morganmazouchi/Tech-Summit-2022/main/InputData%20%26%20ML%20model/Techsummit%20DLT%202022%20-%20GoldLayer.png" width="800"/>
+-- MAGIC <img style="float: right; padding-left: 10px" src="https://github.com/QuentinAmbard/databricks-demo/raw/main/product_demos/dlt-golden-demo-4.png" width="500"/>
 
 -- COMMAND ----------
 
