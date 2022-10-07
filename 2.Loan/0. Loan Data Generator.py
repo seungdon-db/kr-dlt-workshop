@@ -15,7 +15,7 @@
 # COMMAND ----------
 
 # DBTITLE 1,Run First for Widgets
-dbutils.widgets.text('path', '/home/first.last@databricks.com', 'Storage Path')
+dbutils.widgets.text('path', '/home/first.last@databricks.com', 'Landing Path')
 dbutils.widgets.combobox('batch_wait', '5', ['15', '30', '45', '60'], 'Speed (secs between writes)')
 dbutils.widgets.combobox('num_recs', '10', ['5000', '10000', '20000'], 'Volume (# records per writes)')
 
