@@ -86,4 +86,16 @@ SELECT * FROM json.`dbfs:/user/hive/warehouse/${database}.db/customer_silver_tab
 
 -- COMMAND ----------
 
+DESCRIBE HISTORY ${database}.customer_silver_table
+
+-- COMMAND ----------
+
+SELECT COUNT(*) FROM ${database}.customer_silver_table
+
+-- COMMAND ----------
+
+SELECT COUNT(*) FROM ${database}.customer_silver_table@v2
+
+-- COMMAND ----------
+
 
