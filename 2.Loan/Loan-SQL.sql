@@ -12,7 +12,7 @@
 -- MAGIC **운영 복잡성 제거** <br/>
 -- MAGIC 복잡한 운영 작업들을 자동화하고 파이프라인 운영의 가시성을 제공합니다. 
 -- MAGIC 
--- MAGIC **너의 데이터를 믿으세요** <br/>
+-- MAGIC **당신의 데이터를 믿으세요** <br/>
 -- MAGIC 빌트인 품질 관리와 모니터링 기능으로 BI,DS,ML 시에 사용될 데이터에 대한 정확성을 확보하세요.
 -- MAGIC 
 -- MAGIC **배치와 스트리밍 간편화** <br/>
@@ -58,7 +58,7 @@
 -- MAGIC 다음과 같이 설정합니다. 
 -- MAGIC 
 -- MAGIC          "loanStats": "/databricks-datasets/lending-club-loan-stats/LoanStats_*"
--- MAGIC          "input_data": "/home/techsummit/dlt"
+-- MAGIC          "input_data": "/FileStore/loan"
 
 -- COMMAND ----------
 
