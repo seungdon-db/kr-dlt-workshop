@@ -132,7 +132,7 @@ SELECT
   *
 FROM
   cloud_files(
-    "/tmp/demo/cdc_raw/customers",
+    "${source}/customers",
     "json",
     map("cloudFiles.inferColumnTypes", "true")
   );
